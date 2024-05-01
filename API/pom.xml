@@ -7,14 +7,29 @@
     <groupId>com.pandapulsestudios</groupId>
     <artifactId>pulsecommands-api</artifactId>
     <packaging>jar</packaging>
-    <name>Pulsecommands API</name>
+    <name>PulsecommandsAPI</name>
     <version>1.0.0-SNAPSHOT</version>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/closeplanet2/PulseCommandsAbstract</url>
+        </repository>
+    </distributionManagement>
 
     <parent>
         <groupId>com.pandapulsestudios</groupId>
         <artifactId>pulsecommands-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
+
+    <repositories>
+        <repository>
+            <id>pulsecore</id>
+            <url>https://maven.pkg.github.com/closeplanet2/PulseCore</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>

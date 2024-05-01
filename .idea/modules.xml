@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Plugin/pulsecommands.iml" filepath="$PROJECT_DIR$/Plugin/pulsecommands.iml" />
       <module fileurl="file://$PROJECT_DIR$/API/pulsecommands-api.iml" filepath="$PROJECT_DIR$/API/pulsecommands-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/pulsecommands-parent.iml" filepath="$PROJECT_DIR$/pulsecommands-parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/v1_20_R1/pulsecommands-v1_20_r1.iml" filepath="$PROJECT_DIR$/v1_20_R1/pulsecommands-v1_20_r1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/v1_20_R3/pulsecommands-v1_20_r3.iml" filepath="$PROJECT_DIR$/v1_20_R3/pulsecommands-v1_20_r3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/v1_20_r1/pulsecommands-v1_20_r1.iml" filepath="$PROJECT_DIR$/v1_20_r1/pulsecommands-v1_20_r1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/v1_20_r3/pulsecommands-v1_20_r3.iml" filepath="$PROJECT_DIR$/v1_20_r3/pulsecommands-v1_20_r3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Plugin/pulsecommandsplugin.iml" filepath="$PROJECT_DIR$/Plugin/pulsecommandsplugin.iml" />
     </modules>
   </component>
 </project>

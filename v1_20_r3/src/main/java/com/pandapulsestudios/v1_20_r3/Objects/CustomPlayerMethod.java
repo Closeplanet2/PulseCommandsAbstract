@@ -24,11 +24,12 @@ import java.lang.reflect.Method;
 import java.util.*;
 
 public class CustomPlayerMethod implements CustomPlayerMethodNMS {
-    private final Object playerCommand;
-    private final Method method;
+    private Object playerCommand;
+    private Method method;
     private HashMap<String, Method> liveData;
-    private final JavaPlugin javaPlugin;
+    private JavaPlugin javaPlugin;
 
+    public CustomPlayerMethod(){}
     public CustomPlayerMethod(JavaPlugin javaPlugin, Object playerCommand, Method method){
         this.playerCommand = playerCommand;
         this.method = method;

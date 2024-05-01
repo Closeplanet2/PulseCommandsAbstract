@@ -4,11 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/closeplanet2/PulseCommandsAbstract</url>
+        </repository>
+    </distributionManagement>
+
     <groupId>com.pandapulsestudios</groupId>
     <artifactId>pulsecommands-v1_20_r1</artifactId>
     <packaging>jar</packaging>
-    <name>PulseCommands-v1_20_R1</name>
-    <version>v1_20_R1</version>
+    <name>PulseCommands-v1_20_r1</name>
+    <version>v1_20_r1</version>
 
     <parent>
         <groupId>com.pandapulsestudios</groupId>
@@ -22,17 +30,15 @@
             <artifactId>spigot</artifactId>
             <version>1.20.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
+            <type>jar</type>
             <classifier>remapped-mojang</classifier>
-        </dependency>
-        <dependency>
-            <groupId>com.pandapulsestudios</groupId>
-            <artifactId>pulsecore</artifactId>
-            <version>2.0.1</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.pandapulsestudios</groupId>
             <artifactId>pulsecommands-api</artifactId>
             <version>1.0.0-SNAPSHOT</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
 

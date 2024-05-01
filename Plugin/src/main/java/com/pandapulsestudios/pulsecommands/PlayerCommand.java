@@ -14,6 +14,7 @@ import net.md_5.bungee.api.chat.hover.content.Text;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.defaults.BukkitCommand;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -26,11 +27,11 @@ public abstract class PlayerCommand extends BukkitCommand {
     private final String commandName;
     private final boolean debugErrors;
 
-    public PlayerCommand(String commandName, boolean debugErrors, String... alias) {
+    public PlayerCommand(JavaPlugin javaPlugin, String commandName, boolean debugErrors, String... alias) {
         super(commandName.toLowerCase());
         for(var method : this.getClass().getMethods()){
             try {
-                if(method.isAnnotationPresent(PCMethod.class)) customPlayerMethods.add((CustomPlayerMethodNMS) PulseCommands.customPlayerMethodNMS.getConstructor(PlayerCommand.class, Method.class).newInstance(this, method));
+                if(method.isAnnotationPresent(PCMethod.class)) customPlayerMethods.add((CustomPlayerMethodNMS) PulseCommands.customPlayerMethodNMS.getConstructor(JavaPlugin.class, Object.class, Method.class).newInstance(javaPlugin, this, method));
                 if(method.isAnnotationPresent(PCMethodData.class)) liveData.put(method.getName(), method);
             } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
                 throw new RuntimeException(e);
