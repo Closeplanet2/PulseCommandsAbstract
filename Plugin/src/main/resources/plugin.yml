@@ -1,0 +1,6 @@
+name: PulseCommands
+version: 2.0.1
+main: com.pandapulsestudios.pulsecommands.PulseCommands
+authors: [Closeplanet2, PandaPulseStudios]
+depend: [PulseCore]
+api-version: 1.20

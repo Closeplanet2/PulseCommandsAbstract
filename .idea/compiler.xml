@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pulsecommands-v1_20_r1" />
+        <module name="pulsecommands-v1_20_r3" />
+        <module name="pulsecommands-api" />
+      </profile>
+      <profile name="Annotation profile for PulseCommandsAbstract" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pulsecommands" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="API" target="1.8" />
+      <module name="Plugin" target="1.8" />
+      <module name="pulsecommands-parent (1)" target="17" />
+      <module name="pulsecommands-parent (2)" target="17" />
+      <module name="pulsecommands-v1_20_R1" target="17" />
+      <module name="pulsecommands-v1_20_R3" target="17" />
+      <module name="PulseCommandsAbstract" target="1.8" />
+      <module name="v1_20_R1" target="1.8" />
+      <module name="v1_20_R3" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

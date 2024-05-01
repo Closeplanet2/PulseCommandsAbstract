@@ -1,0 +1,4 @@
+name: API
+version: '${project.version}'
+main: com.pandapulsestudios.api.API
+api-version: '1.20'

@@ -1,0 +1,16 @@
+com\pandapulsestudios\api\Enum\PlayerCommandError.class
+com\pandapulsestudios\api\Interface\PCSignature.class
+com\pandapulsestudios\api\Interface\PCTab.class
+com\pandapulsestudios\api\Interface\PCRegion.class
+com\pandapulsestudios\api\Interface\PCFunctionHideTab.class
+com\pandapulsestudios\api\Enum\TabType.class
+com\pandapulsestudios\api\Interface\PCWorld.class
+com\pandapulsestudios\api\Interface\PCOP.class
+com\pandapulsestudios\api\Interface\PCMethodData.class
+com\pandapulsestudios\api\Interface\PCMethod.class
+com\pandapulsestudios\api\Interface\PCHideTab.class
+com\pandapulsestudios\api\Interface\PCPerm.class
+com\pandapulsestudios\api\Interface\PCAutoTabs.class
+com\pandapulsestudios\api\Interface\CustomPlayerMethodNMS.class
+com\pandapulsestudios\api\Interface\PCTabs.class
+com\pandapulsestudios\api\Interface\PCAutoTab.class
