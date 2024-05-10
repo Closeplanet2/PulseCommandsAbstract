@@ -43,7 +43,7 @@ public final class PulseCommands extends JavaPlugin {
         }
     }
 
-    private static void RegisterCommand(Class<?> clazz, JavaPlugin plugin) throws Exception{
+    public static void RegisterCommand(Class<?> clazz, JavaPlugin plugin) throws Exception{
         var commandMap = (CommandMap) getField(Bukkit.getServer().getClass(), "commandMap").get(Bukkit.getServer());
         var commandClass = (Class<? extends PlayerCommand>) clazz;
         PlayerCommand command;
@@ -57,6 +57,7 @@ public final class PulseCommands extends JavaPlugin {
                     command = commandClass.getConstructor().newInstance();
                 } catch (InstantiationException | NoSuchMethodException | InvocationTargetException | IllegalAccessException ex2) {
                     ex2.printStackTrace();
+                    System.err.println("Error instantiating " + commandClass.getName() + ": " + ex2.getMessage());
                     return;
                 }
             }

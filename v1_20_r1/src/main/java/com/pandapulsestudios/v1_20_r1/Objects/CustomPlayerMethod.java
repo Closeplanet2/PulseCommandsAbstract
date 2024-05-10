@@ -27,7 +27,7 @@ import java.util.*;
 public class CustomPlayerMethod implements CustomPlayerMethodNMS {
     private Object playerCommand;
     private Method method;
-    private HashMap<String, Method> liveData;
+    private HashMap<String, Method> liveData = new HashMap<>();
     private JavaPlugin javaPlugin;
 
     public CustomPlayerMethod(){}

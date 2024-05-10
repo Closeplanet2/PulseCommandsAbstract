@@ -37,6 +37,7 @@ public abstract class PlayerCommand extends BukkitCommand {
                 throw new RuntimeException(e);
             }
         }
+        for(var customPlayerMethod : customPlayerMethods) customPlayerMethod.AcceptLiveData(liveData);
         setAliases(Arrays.stream(alias).toList());
         this.commandName = commandName;
         this.debugErrors = debugErrors;

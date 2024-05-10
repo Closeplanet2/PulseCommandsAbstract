@@ -16,12 +16,12 @@
     <artifactId>pulsecommands-v1_20_r3</artifactId>
     <packaging>jar</packaging>
     <name>PulseCommands-v1_20_r3</name>
-    <version>v1_20_r3</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <parent>
         <groupId>com.pandapulsestudios</groupId>
         <artifactId>pulsecommands-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <dependencies>
@@ -37,7 +37,7 @@
         <dependency>
             <groupId>com.pandapulsestudios</groupId>
             <artifactId>pulsecommands-api</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.1-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
     </dependencies>
